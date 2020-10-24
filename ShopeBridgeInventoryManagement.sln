@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopeBridgeInventoryManagement", "ShopeBridgeInventoryManagement\ShopeBridgeInventoryManagement.csproj", "{890EE58D-9722-4FE6-97AA-42F391BC8A07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopeBridgeInventoryClient", "ShopeBridgeInventoryClient\ShopeBridgeInventoryClient.csproj", "{39A206AD-2E8B-4E27-B348-298400DDFA4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopeBridgeInventoryClient.Tests", "ShopeBridgeInventoryClient.Tests\ShopeBridgeInventoryClient.Tests.csproj", "{B45B2354-FE4D-4C3A-8080-BAC54BC1B75B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{890EE58D-9722-4FE6-97AA-42F391BC8A07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{890EE58D-9722-4FE6-97AA-42F391BC8A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{890EE58D-9722-4FE6-97AA-42F391BC8A07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39A206AD-2E8B-4E27-B348-298400DDFA4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39A206AD-2E8B-4E27-B348-298400DDFA4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39A206AD-2E8B-4E27-B348-298400DDFA4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39A206AD-2E8B-4E27-B348-298400DDFA4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B45B2354-FE4D-4C3A-8080-BAC54BC1B75B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B45B2354-FE4D-4C3A-8080-BAC54BC1B75B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B45B2354-FE4D-4C3A-8080-BAC54BC1B75B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B45B2354-FE4D-4C3A-8080-BAC54BC1B75B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

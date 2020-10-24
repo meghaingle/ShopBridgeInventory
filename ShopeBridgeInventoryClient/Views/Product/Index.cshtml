@@ -1,0 +1,67 @@
+﻿@model IEnumerable<ShopeBridgeInventoryClient.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div style="align-content:center">
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.ImageTitle)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ImagePath)
+                </th>*@
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            using (Html.BeginForm("Delete", "Product", new { id = item.ProductId }))
+            {
+            <tr>
+                <td>
+
+                    @Html.ActionLink(item.ProductName, "Details", new { id = item.ProductId })
+                    @*@Html.DisplayFor(modelItem => item.ProductName)*@
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.ImageTitle)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ImagePath)
+                    </td>*@
+            <td>
+                <span class="btn btn-default">
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ProductId }) </span>|
+                    @*@Html.ActionLink("Details", "Details", new { id = item.ProductId }) |*@
+                    @*@Html.ActionLink("Delete", "Delete", new { id = item.ProductId })*@
+                    <input type="submit" value="Delete"  class="btn btn-default" onclick="return confirm('Are you sure you want to delete record with ID = @item.ProductId');" />
+</td>
+            </tr>
+            }
+        }
+
+
+    </table>
+</div>
